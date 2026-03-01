@@ -782,7 +782,8 @@ def run():
                                 merged_model.save_pretrained(save_directory)
                                 del merged_model
                                 empty_cache()
-                                model.tokenizer.save_pretrained(save_directory)
+                            
+                            model.tokenizer.save_pretrained(save_directory)
 
                             print(f"Model saved to [bold]{save_directory}[/].")
 
