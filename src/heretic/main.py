@@ -840,10 +840,11 @@ def run():
                                 )
                                 del merged_model
                                 empty_cache()
-                                model.tokenizer.push_to_hub(
-                                    repo_id,
-                                    private=private,
-                                    token=token,
+                                
+                            model.tokenizer.push_to_hub(
+                                repo_id,
+                                private=private,
+                                token=token,
                                 )
 
                             # If the model path exists locally and includes the
